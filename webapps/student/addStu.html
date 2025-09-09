@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>P3_3</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 550px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #ccc;
+        }
+
+        legend {
+            font-size: 22px;
+            color: #2c3e50;
+            font-weight: bold;
+            background-color: #dceeff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #aaa;        
+        }
+
+
+        .form-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .form-input, select, textarea {
+            padding: 6px;
+            width: 220px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        #submit-btn, #reset-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #reset-btn {
+            background-color: #e74c3c;
+        }
+
+        #submit-btn:hover {
+            background-color: #388E3C;
+        }
+
+        #reset-btn:hover {
+            background-color: #c0392b;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="get" action="student">
+        <fieldset>
+            <legend> Student Registration Form</legend>
+
+             <p>
+                <label class="form-label">Student I'd:</label>
+                <input type="number" class="form-input" placeholder="Enter Student I'd" name="id">
+            </p>
+
+            <p>
+                <label class="form-label">First Name:</label>
+                <input type="text" class="form-input" placeholder="Enter First Name" name="fname">
+            </p>
+
+            <p>
+                <label class="form-label">Last Name:</label>
+                <input type="text" class="form-input" placeholder="Enter Last Name" name="lname">
+            </p>
+
+            <p>
+                <label class="form-label">DOB:</label>
+                <input type="date" class="form-input" name="dob">
+            </p>
+
+            <p>
+                <label class="form-label">Email ID:</label>
+                <input type="email" class="form-input" placeholder="Enter Email" name="email">
+            </p>
+
+            <p>
+                <label class="form-label">Mobile Phone:</label>
+                <select class="form-input" style="width: 60px;">
+                    <option>+91</option>
+                </select>
+                <input type="tel" class="form-input" placeholder="Mobile No"name="mobNo" maxlength="10" style="width: 150px;">
+            </p>
+
+            <p>
+                <label class="form-label">Branch:</label>
+                <input type="text" class="form-input" placeholder="Enter Student Branch" name="branch">
+            </p>
+
+            <p>
+                <label class="form-label">Gender:</label>
+                <input type="radio" name="gender" value="Male" checked> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </p>
+
+
+            <p>
+                <label class="form-label">City:</label>
+                <select class="form-input" name="city">
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Mubmai">Mubmai</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Gandhinagar">Gandhinagar</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="form-label">State:</label>
+                <select class="form-input" name="state">
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="form-label">Address:</label>
+                <textarea rows="2" class="form-input" name="address"></textarea>
+            </p>
+
+            <p style="text-align:center;">
+                <input type="submit" id="submit-btn" value="Submit">
+                <input type="reset" id="reset-btn" value="Reset">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
